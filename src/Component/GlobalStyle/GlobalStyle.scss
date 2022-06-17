@@ -3,6 +3,18 @@
 
 :root{
     --primary: #fe2c55;
+    --black: black;
+    --text-color: #333;
+
+    //Default Layout
+    --header-hight: 60px;
+    --header-width: 1150px;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 html{
@@ -17,4 +29,14 @@ body{
     font-size: 1.6rem;
     line-height: 1.5;
     text-rendering: optimizeSpeed;
+}
+
+button,input, [tabindex]{
+    outline:none;
+    border: none;
+}
+
+a[href]{
+    color: var(--text-color);
+    text-decoration: none;
 }
